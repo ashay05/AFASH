@@ -22,20 +22,13 @@ function manipulateCartItems() {
   cartItems.forEach((element) => {
     tableBodyContainer.innerHTML += `
         <div class="item-container">
-        
-           
-        
          <div class="row-1">
          <img class="table-image" src="${element.image}" alt="" />
          <p class="title"> ${element.title}</p>
           <p class="price">$${element.price}</p>
           <input class="item-value" value="1" />
          </div>
-
-         <button class="remove-btn" onclick="deleteItem('${element.id}')">Delete</button>
-        
-         
-       
+         <button class="remove-btn" onclick="deleteItem('${element.id}')">Delete</button>  
         </tr>
       </div>
         `;
